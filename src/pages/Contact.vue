@@ -6,7 +6,7 @@
         <div class="row">
           <div class="col-md-12">
             <div class="text-content">
-                <h4>contact us</h4><h4>User {{ $route.params.id }}</h4>
+                <h4>contact us</h4>
               <h2>let’s get in touch</h2>
             </div>
           </div>
@@ -167,6 +167,11 @@
 </template>
 <script>
 export default {
-    
+    // created() {
+    //     alert('Id is : '+this.$route.params.id);
+    // }
 }
 </script>
+<style>
+
+</style>
