@@ -207,8 +207,7 @@ export default {
         },
       ]
     }
-  }
-
+  },
 }
 </script>
 <style>

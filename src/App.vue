@@ -1,12 +1,5 @@
 <template>
     <div>
-        <div id="preloader" v-if="seen">
-            <div class="jumper">
-                <div></div>
-                <div></div>
-                <div></div>
-            </div>
-        </div>
         <router-view name="navbar"></router-view>
         <router-view></router-view>
         <router-view name="footer"></router-view>

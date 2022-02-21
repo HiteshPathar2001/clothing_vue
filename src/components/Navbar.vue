@@ -1,5 +1,12 @@
 <template>
     <div>
+        <div id="preloader" v-if="seen">
+            <div class="jumper">
+                <div></div>
+                <div></div>
+                <div></div>
+            </div>
+        </div>
         <header :class="{ 'background-header': scrollPosition > 50 }">
             <nav class="navbar navbar-expand-lg">
                 <div class="container">
@@ -20,7 +27,7 @@
                     <div class="collapse navbar-collapse" id="navbarResponsive">
                         <ul class="navbar-nav ml-auto">
                             <li class="nav-item">
-                                <router-link to="/" class="nav-link">Home</router-link>
+                                <router-link :to="{name:'home'}" class="nav-link" active-link="active">Home</router-link>
                             </li>
                             <li class="nav-item">
                                 <router-link :to="{name:'products'}" class="nav-link">Our Products</router-link>
